@@ -1,5 +1,5 @@
-# Javascript Algorithm and Data Structures
-List of solved Javascript Algorithm and Data Structures
+# Javascript Algorithm
+List of personally solved Javascript Algorithm
 
 ### Table of Contents
 
