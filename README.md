@@ -22,6 +22,7 @@ Bubble sort compares the element from index 0 and if the 0th index is less than 
 then, the 1st index compares to the 2nd index then the 2nd index compares to the 3rd, and so on…
 
     ```javascript
+    
      function bubbleSort(array) {
         for(let i = 0; i < array.length; i++){
             for(let j = 0; j < (array.length - i - 1); j++){
@@ -36,6 +37,7 @@ then, the 1st index compares to the 2nd index then the 2nd index compares to the
      }
 
      const sortedArray = bubbleSort([1, 4, 2, 8, 345, 123, 43, 32, 5643, 63, 123, 43, 2, 55, 1, 234, 92])
+     
     ```
 
 
