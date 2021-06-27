@@ -22,9 +22,9 @@ List of personally solved Javascript Algorithm
 
     then, the 1st index compares to the 2nd index then the 2nd index compares to the 3rd, and so on…
     
-    Time Complexity : O(n²) `worst case`
-    Number of Swaps : n - 1 `worst case considering length as n`
+    Time Complexity in worst case: `O(n²)` 
     
+    Number of Swaps in worst case: `n - 1`
     
 ```javascript
     function bubbleSort(array) {
@@ -57,7 +57,7 @@ List of personally solved Javascript Algorithm
 
     After each iteration, one less element needs to be checked, until the entire array or list is sorted. In other words, after the k-th iteration, the first k elements of the array or list are guaranteed to be sorted.
     
-    Time Complexity : O(n²) `worst case`
+    Time Complexity in worst case: `O(n²)`
     
 ```javascript
     function selectionSort(array) {
