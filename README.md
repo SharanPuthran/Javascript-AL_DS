@@ -11,7 +11,7 @@ List of personally solved Javascript Algorithm
 
 ## Algorithms
     
-1. ## Bubble Sorting in JavaScript
+1. ### Bubble Sorting in JavaScript
 
     Bubble sort algorithm is an algorithm that sorts the array by comparing two adjacent elements and swaps them if they are not in the intended order. Here order can be anything like increasing order or decreasing order.
 
@@ -45,7 +45,7 @@ List of personally solved Javascript Algorithm
 
    **[⬆ Back to Top](#table-of-contents)**
 
-2. ## Selection Sorting in JavaScript
+2. ### Selection Sorting in JavaScript
 
     This algorithm divides the input array into two sublists - a sorted and unsorted sublist. The sorted list is located at the start of the collection, and all elements to the right of the final sorted element are considered unsorted.
 
