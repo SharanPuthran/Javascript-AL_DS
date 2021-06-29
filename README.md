@@ -8,6 +8,7 @@ List of personally solved Javascript Algorithm
 |   | **Algorithms** |
 |1  | [Bubble Sorting in JavaScript](#bubble-sort) |
 |2  | [Selection Sorting in JavaScript](#selection-sort) |
+|3  | [Inventory Update](#inventor-update) |
 
 ## Algorithms
     
@@ -83,3 +84,44 @@ List of personally solved Javascript Algorithm
 ```
 
    **[⬆ Back to Top](#table-of-contents)**
+   
+   
+3. ### Inventory Update
+
+    *Problem Statement* : Compare and update the inventory stored in a 2D array against a second 2D array of a fresh delivery. Update the current existing inventory item quantities (in arr1). If an item cannot be found, add the new item and quantity into the inventory array. The returned inventory array should be in alphabetical order by item.
+    
+    *Approach* : Reverse the inner arrays and convert to map, then update the inventories and convert back to a 2D array in the original format.
+    
+```javascript
+   function updateInventory(arr1, arr2) {
+     let currrentInvMap = new Map(arr1.map( (el) => el.reverse() ));
+     let newInvMap = new Map(arr2.map( (el) => el.reverse() ));
+     for( let [product, value] of newInvMap ){
+       if(currrentInvMap.has(product)){
+         currrentInvMap.set(product, currrentInvMap.get(product) + value );
+       }
+       else{
+         currrentInvMap.set(product, value)
+       }
+    }
+    return [...currrentInvMap].sort().map( (el) => el.reverse() );
+  }
+
+    // Example inventory lists
+    var curInv = [
+        [21, "Bowling Ball"],
+        [2, "Dirty Sock"],
+        [1, "Hair Pin"],
+        [5, "Microphone"]
+    ];
+
+    var newInv = [
+        [2, "Hair Pin"],
+        [3, "Half-Eaten Apple"],
+        [67, "Bowling Ball"],
+        [7, "Toothpaste"]
+    ];
+
+    const returnValue = updateInventory(curInv, newInv);
+    console.log(returnValue);
+```
